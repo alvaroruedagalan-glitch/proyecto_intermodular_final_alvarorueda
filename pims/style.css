@@ -1,14 +1,11 @@
-/* ==========================================================================
-   1. VARIABLES Y CONFIGURACIÓN GENERAL
-   ========================================================================== */
 :root {
-    --color-principal: #0f172a;   /* Azul pizarra oscuro para fondos principales */
-    --color-secundario: #1e293b;  /* Azul un poco más claro para secciones oscuras */
-    --color-acento: #0ea5e9;      /* Azul eléctrico para botones y destaques */
+    --color-principal: #0f172a;   
+    --color-secundario: #1e293b;  
+    --color-acento: #0ea5e9;     
     --color-acento-hover: #0284c7;
     --color-texto-oscuro: #0f172a;
     --color-texto-claro: #f8fafc;
-    --color-fondo-claro: #f1f5f9;  /* Gris muy claro para secciones alternas */
+    --color-fondo-claro: #f1f5f9;  
     --color-tarjeta: #ffffff;
     --fuente-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --transicion: all 0.3s ease;
@@ -42,9 +39,6 @@ body {
     max-width: 600px;
 }
 
-/* ==========================================================================
-   2. HEADER Y NAVEGACIÓN
-   ========================================================================== */
 header {
     background-color: var(--color-principal);
     color: var(--color-texto-claro);
@@ -87,7 +81,6 @@ nav ul li a:hover {
     color: var(--color-acento);
 }
 
-/* Responsive Header */
 @media (max-width: 900px) {
     header {
         flex-direction: column;
@@ -101,9 +94,6 @@ nav ul li a:hover {
     }
 }
 
-/* ==========================================================================
-   3. SECCIONES (HERO Y CONTENIDO)
-   ========================================================================== */
 .contenido {
     padding: 5rem 0;
     background-color: #ffffff;
@@ -131,7 +121,6 @@ nav ul li a:hover {
     border-radius: 2px;
 }
 
-/* Hero Section */
 .hero {
     background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), 
                 url('https://images.unsplash.com/photo-1588508065123-287b28e013da?q=80&w=1200') no-repeat center center/cover;
@@ -161,7 +150,6 @@ nav ul li a:hover {
     margin-bottom: 2.5rem;
 }
 
-/* Botones */
 .boton {
     display: inline-block;
     background-color: var(--color-acento);
@@ -180,9 +168,6 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   4. TARJETAS (CARDS GRID)
-   ========================================================================== */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -222,9 +207,6 @@ nav ul li a:hover {
     color: #cbd5e1;
 }
 
-/* ==========================================================================
-   5. TABLA DE TEMPORALIZACIÓN
-   ========================================================================== */
 .table-responsive {
     overflow-x: auto;
     margin-bottom: 4rem;
@@ -258,9 +240,6 @@ tr:nth-child(even) {
     background-color: #f8fafc;
 }
 
-/* ==========================================================================
-   6. DIAGRAMA DE GANTT (CSS GRID)
-   ========================================================================== */
 .subsection-title {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
@@ -277,7 +256,7 @@ tr:nth-child(even) {
 }
 
 .gantt-container {
-    min-width: 750px; /* Evita que el grid colapse en pantallas pequeñas */
+    min-width: 750px; 
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -322,16 +301,12 @@ tr:nth-child(even) {
     box-shadow: 0 2px 4px rgba(14, 165, 233, 0.2);
 }
 
-/* Colores alternos para las barras de tareas */
 .barra1 { background-color: #3b82f6; }
 .barra2 { background-color: #10b981; }
 .barra3 { background-color: #6366f1; }
 .barra4 { background-color: #f59e0b; }
 .barra5 { background-color: #ec4899; }
 
-/* ==========================================================================
-   7. FORMULARIO DE CONTACTO
-   ========================================================================== */
 .formulario {
     background-color: #334155;
     padding: 2.5rem;
@@ -365,10 +340,6 @@ tr:nth-child(even) {
     width: 100%;
     font-size: 1rem;
 }
-
-/* ==========================================================================
-   8. FOOTER
-   ========================================================================== */
 footer {
     background-color: var(--color-principal);
     color: #94a3b8;
