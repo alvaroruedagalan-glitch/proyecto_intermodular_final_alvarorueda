@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Aitor | Colaborador</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background-color:#1f3a5f;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+nav{
+    background-color:#16304a;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.section{
+    padding:40px 20px;
+    max-width:1000px;
+    margin:auto;
+    background-color:white;
+    margin-top:20px;
+    border-radius:5px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.project-card{
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:20px;
+    background-color:#f9f9f9;
+    transition:transform 0.3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3{
+    color:#1f3a5f;
+    margin-top:0;
+}
+
+.btn{
+    display:inline-block;
+    background-color:#1f3a5f;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background-color:#16304a;
+}
+
+footer{
+    background-color:#1f3a5f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Aitor</h1>
+<p>Colaborador de Proyectos</p>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section class="section" id="perfil">
+<h2>Perfil Profesional</h2>
+<p>
+Desarrollador web y técnico en sistemas con experiencia en proyectos colaborativos.
+Especializado en el desarrollo de aplicaciones web y soluciones de infraestructura.
+</p>
+</section>
+
+<section class="section" id="proyectos">
+<h2>Proyectos Realizados</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Proyecto Web 1</h3>
+<p>Desarrollo de página web corporativa con diseño responsive.</p>
+<a href="#" class="btn">Ver más</a>
+</div>
+
+<div class="project-card">
+<h3>Proyecto Web 2</h3>
+<p>Aplicación web interactiva con JavaScript.</p>
+<a href="#" class="btn">Ver más</a>
+</div>
+
+<div class="project-card">
+<h3>Proyecto de Redes</h3>
+<p>Configuración e implementación de red local.</p>
+<a href="#" class="btn">Ver más</a>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contacto">
+<h2>Contacto</h2>
+
+<p><strong>Ubicación:</strong> Talavera de la Reina</p>
+<p><strong>Email:</strong> aitor@ejemplo.es</p>
+
+</section>
+
+<footer>
+<p>© Aitor - Colaborador</p>
+</footer>
+
+</body>
+</html>

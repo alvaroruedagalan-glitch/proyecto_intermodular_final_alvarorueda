@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formularios con html5. Nuevos atributos y data list</h2>
+    El atributo placeholder te permite indicar que se espera en el campo
+
+    <form name="formulario" method="post" action="https://www.institutos.es/para.php">
+        <input type="text" name="dato1" placeholder="Teclea tu nombre..."><br><br>
+        <input type="text" name="dato2" placeholder="Teclea tus apellidos..."><br><br>
+
+        <input type="range" name="dato3" placeholder="Teclea algo..." max="100" min="10" step="10"><br><br>
+
+        <input list="ciudad" name="CIUDADES" placeholder="Haz clic en tu CIUDAD..."><br>
+        <datalist id="ciudad">
+            <option>Talavera</option>
+            <option>Toledo</option>
+            <option>Talavera la Nueva</option>
+            <option>Segurilla</option>
+            <option>Mejorada</option>
+            <option>Calera</option>
+
+        </datalist>
+        <br>
+        
+        <input type="color" name="elcolor">
+        <input type="date" name="lafecha">
+        <input type="time" name="lahora" min="10:00" max="20:00" step="1">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

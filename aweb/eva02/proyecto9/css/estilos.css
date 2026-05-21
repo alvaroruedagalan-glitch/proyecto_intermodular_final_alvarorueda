@@ -1,0 +1,56 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: #222;
+    padding: 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0 2px 5px black;
+}
+
+.tarjeta img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tarjeta h3{
+    color: gray;
+    margin: 10px 0 5px;
+}
+
+.tarjeta p{
+    font-size: 0.9em;
+    padding: 0 10px 15px;
+}
+
+footer{
+    color: #444;
+    padding: 15px 0;
+    border-top: 2px solid #ccc;
+    font-size: 0.9em;
+}

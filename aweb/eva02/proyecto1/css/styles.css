@@ -1,0 +1,16 @@
+ body{
+            background-color: lightblue;
+            background-image: url("../assets/images/image.jpg");
+         
+            
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+        div{
+            background-color: white;
+            margin: 40px auto;
+            padding: 20px;
+            width: 60%;
+            border-radius: 15px;
+            text-align: center;
+        }

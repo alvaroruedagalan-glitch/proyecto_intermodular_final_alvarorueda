@@ -1,0 +1,52 @@
+
+
+body{
+     font-family: "Dancing Script", cursive;
+    background-color: rgb(202, 26, 26);
+    color: blueviolet;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+h2{
+    color: blue;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.9em;
+    color: black;
+    margin-top: 20px;
+    padding: 10px 0;
+}

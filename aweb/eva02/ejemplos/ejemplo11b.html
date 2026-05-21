@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 5px;
+            width: 120px;
+            text-align: center;
+        }
+
+        .bloque{
+            display: block;
+        }
+        .enlinea{
+            display: inline;
+        }
+        .enlineabloque{
+            display: inline-block;
+        }
+        p{
+            display: none;
+        }
+        .oculto:hover p{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <h2>display: block (por defecto)</h2>
+    <div class="bloque">Caja 1</div>
+    <div class="bloque">Caja 2</div>
+    <div class="bloque">Caja 3</div>
+
+    <h2>display: inline</h2>
+    <div class="enlinea">Caja 1</div>
+    <div class="enlinea">Caja 2</div>
+    <div class="enlinea">Caja 3</div>
+
+    <h2>display: inline block</h2>
+    <div class="enlineabloque">Caja 1</div>
+    <div class="enlineabloque">Caja 2</div>
+    <div class="enlineabloque">Caja 3</div>
+
+    <h2>Display: none</h2>
+    <div class="oculto">Párrafo oculto
+    <p>En este caso, la caja no se muestra en la página</p>
+    </div>
+  
+</body>
+</html>

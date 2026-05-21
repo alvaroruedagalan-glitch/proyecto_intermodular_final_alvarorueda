@@ -1,0 +1,12 @@
+div{
+    background-color: blue;
+    color: white;
+    margin: 3px;
+    padding: 4px 15px;
+    display: inline-block;
+}
+img{
+    float: right;
+    width: 300px;
+    margin: 10px;
+}

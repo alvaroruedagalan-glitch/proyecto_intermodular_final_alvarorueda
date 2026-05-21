@@ -1,0 +1,78 @@
+Un centro educativo quiere una página web muy sencilla para recoger
+algunos datos básicos de un alumno y mostrar distinta información en
+pantalla según el botón que se pulse.
+En la página, el usuario deberá poder escribir:
+• su nombre
+• su edad
+• el curso en el que está matriculado
+La aplicación deberá permitir realizar estas acciones:
+• Mostrar un mensaje de presentación con el texto exacto:
+Hola [nombre], tienes [edad] años y estás en [curso].
+• Mostrar si el alumno es mayor o menor de edad con uno de estos
+mensajes exactos:
+Eres mayor de edad.
+Eres menor de edad.
+• Mostrar el nombre en mayúsculas con el texto exacto:
+Tu nombre en mayúsculas es: [NOMBRE]
+• Mostrar cuántas letras tiene el nombre con el texto exacto:
+Tu nombre tiene [número] letras.
+• Realizar un cambio visual claro en la página al pulsar un botón.
+Los datos deberán introducirse en la propia página y los resultados deberán
+aparecer en una zona visible del documento.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Resgistro alumno</h1>
+    <p>Nombre: </p>
+    <input type="text" id="nombre">
+
+    <p>Edad</p>
+    <input type="number" id="edad">
+
+    <p>Curso</p>
+    <input type="" name="" id="curso">
+    <br><br>
+
+    <button onclick="presentacion()">Presentación</button>
+    <button onclick="menorOMayor()">Eres menor o mayor de edad</button>
+    <button onclick="nombredatos()">Tu nombre en mayuscula y cuantas letras tiene</button>
+    <button onclick="cambiarColor()">Cambiar fondo</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function presentacion(){
+            let nombre = document.getElementById("nombre").value;
+            let edad = document.getElementById("edad").value;
+            let curso = document.getElementById("curso").value;
+
+            document.getElementById("resultado").innerHTML = "Hola " + nombre + " tienes " + edad + " años y cursas " + curso;  
+        }
+
+        function menorOMayor(){
+            let edad = document.getElementById("edad").value;
+            if (edad >= 18){
+                document.getElementById("resultado").innerHTML = "Eres mayor de edad."
+            }
+            else if (edad < 18){
+                document.getElementById("resultado").innerHTML = "Eres menor de edad."
+            }
+        }
+
+        function nombredatos(){
+            let nombre = document.getElementById("nombre").value;
+
+            document.getElementById("resultado").innerHTML = "Tu nombre en mayusculas es " + nombre.toUpperCase() + " y tiene de letras " + nombre.length;
+        }
+
+        function cambiarColor(){
+            document.body.style.backgroundColor = "yellow"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    font-size: 2em;
+}   
+
+section{
+    display: flex;
+}
+
+article{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.articulo1{
+    background-color: green;
+}
+
+.articulo2{
+    background-color: violet;
+}
+.articulo3{
+    background-color: aqua;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
